@@ -1,0 +1,466 @@
+body {
+    font-family: 'Helvetica';
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 3%
+    
+}
+
+
+
+.container {
+    width: 70%;
+    margin: auto;
+  
+    /*Added this line because the negative space starts to look odd at large screen widths -- you may want to adjust once you have the actual text context*/
+    /*    overflow: hidden;*/
+}
+
+
+/*------------BEGIN OUR MISSION----------------*/
+
+/*Our Mission Flex Container*/
+#ourmission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*Our Mission Flex Items Begin*/
+#ourmission div {
+    box-sizing: border-box;
+    width: 48%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 17pt;
+    font-family: handlee;
+}
+
+/*Our Mission Flex Items End*/
+
+
+/*Additional CSS in Our Mission*/
+#ourmission h2 {
+    margin: 0;
+}
+
+/*Note below are the old selectors for the flex items, but I eliminated them to keep things simpler using amn "#ourmission div" selector above*/
+.missiontext {}
+
+.missionimg {
+    /*    margin-bottom: 20px;*/
+    /*    padding: 3% 0 3% 0;*/
+    /*    padding: 1%;*/
+}
+
+
+
+/*------------END OUR MISSION----------------*/
+
+#featuredprojects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family:handlee;
+    
+}
+
+#featuredprojects div {
+    box-sizing: border-box;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+    font-family: handlee;
+}
+
+#featuredprojectstext {
+    font-family: handlee;
+    
+}
+
+#featuredtext {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+
+#newprojects {
+    box-sizing: border-box;
+    width: 48%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    font-family: handlee;
+}
+
+#newprojects h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#moreprojects {
+    box-sizing: border-box;
+    width: 48%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: handlee;
+}
+
+#postyourown {
+ 
+    box-sizing: border-box;
+    width: 48%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #dcedc8;
+    border-radius: 30%;
+    text-align: center;
+    font-family: handlee;
+   
+    
+
+}
+
+#postyourown:hover {
+    opacity: 30%
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#text div {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+    font-family: handlee;
+}
+
+#text h2 {
+/*
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+*/
+}
+
+p {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 15pt;
+}
+
+
+
+#projectpage h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: handlee;
+}
+
+#projectpage {
+    box-sizing: border-box;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-family: handlee;
+    font-size: 20pt
+}
+
+
+#descriptionprojectpage {
+    font-family: handlee;
+    font-size: 35pt;
+}
+
+#login div {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 15pt;
+    font-family: handlee;
+ 
+}
+
+#category div {
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#moreprojects {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#postyourown {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+header {
+    width: 100%;
+    background: #9ccc65;
+    color: white;
+    padding: 40px 0;
+    min-height: 100px;
+    text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#brand {
+    font-family: 'din-condensed';
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    /*    padding: 0;*/
+    margin: 0;
+
+}
+h4 {font-size: 16px;
+margin: 10px, 0;
+    
+
+}
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color:cadetblue;
+  /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+    display: flex;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  flex-direction: row;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-family: handlee;
+    font-size: 23pt;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button2 {
+    /*    display: inline-block;*/
+    padding: 10px 40px;
+    background-color: #5F9D2D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px #474747;
+    /*    float: left;*/
+    color: white;
+    /*    margin: 0;*/
+    margin-top: 30px;
+}
+
+.button2:hover {
+    background-color: #3e8e41;
+}
+
+.button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.buttonimg {
+    width: 25px;
+    height: 25px;
+}
+
+footer {
+    background-color: #5F9D2D;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: handlee;
+    font-size: 18pt;
+}
+@media only screen and (max-width:1200px) {
+    .missionimg {
+        display:none;}
+ #ourmission {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+ 
+
+@media only screen and (max-width:1000px) {
+
+    #ourmission {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    #ourmission div {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #featuredprojects
+    {flex-direction:column;
+align-items: center;
+    }
+    
+    #featuredprojects div {
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+    #featuredprojects img {
+        height: 300px;
+        width: 300px;
+    }
+    
+/*    fixed heights was the only way i could get the pictures be the same size in columns*/
+    
+    #newprojects {
+  
+    }
+    #text {
+        flex-direction:column;
+         
+    }
+   #text div {
+    width: 100%;
+}
+    
+   
+    header {flex-direction:column-reverse;}
+
+    #brand {font-size: 20px;
+    padding: 20px;
+    }
+    h2 {font-size:30px;}
+
+  
+
+}
+@media only screen and (max-width:300px)
+{
+  
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    
+
+@media only screen and (max-width:800px)
+{
+    .navbar {
+    flex-direction: column;}
+
+    .script2 {
+        
+    }
+
+
